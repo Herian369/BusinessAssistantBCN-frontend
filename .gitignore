@@ -1,4 +1,5 @@
 # ignore files for git
+coverage
 node_modules
 cache
 # Compiled source #
