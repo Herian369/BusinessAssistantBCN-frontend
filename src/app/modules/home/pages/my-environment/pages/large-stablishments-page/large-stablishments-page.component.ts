@@ -3,11 +3,11 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Subscription} from "rxjs";
 import {ActivatedRoute, Router} from "@angular/router";
 
-import { LargeStablishmentsService } from '../../../services/large-stablishments.service';
-import { CommonService } from "../../../services/common.service";
-import { ZoneModel } from "../../../models/common/zone.model";
+import { LargeStablishmentsService } from '../../../../../../services/large-stablishments.service';
+import { CommonService } from "../../../../../../services/common.service";
+import { ZoneModel } from "../../../../../../models/common/zone.model";
 import { EconomicActivityModel } from 'src/app/models/common/economic-activity.model';
-import { BreadcrumbService } from '../../../services/breadcrumb.service';
+import { BreadcrumbService } from '../../../../../../services/breadcrumb.service';
 
 
 

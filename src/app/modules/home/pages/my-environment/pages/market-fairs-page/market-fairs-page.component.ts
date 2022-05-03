@@ -1,11 +1,11 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from "rxjs";
 import { ActivatedRoute, Router } from "@angular/router";
-import { MarketFairsService } from '../../../services/market-fairs.service';
-import { CommonService } from "../../../services/common.service";
-import { ZoneModel } from "../../../models/common/zone.model";
+import { MarketFairsService } from '../../../../../../services/market-fairs.service';
+import { CommonService } from "../../../../../../services/common.service";
+import { ZoneModel } from "../../../../../../models/common/zone.model";
 import { EconomicActivityModel } from 'src/app/models/common/economic-activity.model';
-import { MarketFairModel} from './../../../models/market-fair.model';
+import { MarketFairModel} from '../../../../../../models/market-fair.model';
 
 
 @Component({

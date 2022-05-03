@@ -2,7 +2,7 @@ import { Component, OnInit, TemplateRef } from '@angular/core'
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { LargeStablishmentsService } from 'src/app/services/large-stablishments.service'
-import { LargeStablishmentModel } from '../../../models/large-stablishment.model';
+import { LargeStablishmentModel } from '../../../../../../models/large-stablishment.model';
 import { LoginFormComponent } from 'src/app/modules/login/login-form/login-form.component';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 import { MunicipalMarketsService } from 'src/app/services/municipal-markets.service';

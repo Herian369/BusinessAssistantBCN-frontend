@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SavedSearchesModel } from 'src/app/models/saved-searches.model';
-import { SaveSearchesService } from '../../../services/saved-searches.service';
+import { SaveSearchesService } from '../../../../services/saved-searches.service';
 
 
 @Component({

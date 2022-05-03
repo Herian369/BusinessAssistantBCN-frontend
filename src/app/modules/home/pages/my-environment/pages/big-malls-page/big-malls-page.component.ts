@@ -5,7 +5,7 @@ import { EconomicActivityModel } from 'src/app/models/common/economic-activity.m
 import { ZoneModel } from 'src/app/models/common/zone.model';
 import { BigMallsService } from 'src/app/services/big-malls.service';
 import { CommonService } from 'src/app/services/common.service';
-import { BreadcrumbService } from '../../../services/breadcrumb.service';
+import { BreadcrumbService } from '../../../../../../services/breadcrumb.service';
 
 @Component({
   selector: 'app-big-malls-page',

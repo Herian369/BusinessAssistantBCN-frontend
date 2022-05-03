@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Category } from 'src/app/models/business-assistant.model';
 
 @Component({
-  selector: 'app-virtual-assistant-page',
-  templateUrl: './virtual-assistant-page.component.html',
-  styleUrls: ['./virtual-assistant-page.component.css']
+  selector: 'virtual-assistant-accordion',
+  templateUrl: './virtual-assistant-accordion.component.html',
+  styleUrls: ['./virtual-assistant-accordion.component.css']
 })
-export class VirtualAssistantPageComponent implements OnInit {
+export class VirtualAssistantAccordionComponent implements OnInit {
 
   dataSend: any[] = []
   data : Category[] = [

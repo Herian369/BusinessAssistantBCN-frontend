@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from "rxjs";
 import { ActivatedRoute, Router } from "@angular/router";
-import { MunicipalMarketsService } from './../../../services/municipal-markets.service';
-import { CommonService } from "../../../services/common.service";
-import { ZoneModel } from "../../../models/common/zone.model";
+import { MunicipalMarketsService } from '../../../../../../services/municipal-markets.service';
+import { CommonService } from "../../../../../../services/common.service";
+import { ZoneModel } from "../../../../../../models/common/zone.model";
 import { MunicipalMarketModel } from 'src/app/models/municipal-market.model';
-import { BreadcrumbService } from '../../../services/breadcrumb.service';
+import { BreadcrumbService } from '../../../../../../services/breadcrumb.service';
 
 
 @Component({

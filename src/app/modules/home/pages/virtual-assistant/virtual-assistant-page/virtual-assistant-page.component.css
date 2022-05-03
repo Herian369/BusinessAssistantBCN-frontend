@@ -1,0 +1,6 @@
+.baList {
+    cursor: pointer;
+    height: 395px;
+    max-height: 395px;
+    overflow-y: scroll;
+}
