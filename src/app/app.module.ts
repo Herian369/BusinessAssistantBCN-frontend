@@ -40,7 +40,6 @@ import { VirtualAssistantModule } from './modules/home/pages/virtual-assistant/v
     HomeModule,
     LoginModule,
     RegisterModule,
-    VirtualAssistantModule,
     BrowserAnimationsModule,
     AppRoutingModule
   ],
