@@ -20,13 +20,13 @@ describe ('BigMallsService', () => {
         BigMallsService,
         {provide: HttpClient}
       ]
-    });    
-  });
-  
-  beforeEach(()=>{
+    });  
+
     service = TestBed.inject(BigMallsService)
     http = TestBed.inject(HttpTestingController) 
-  })
+
+  });
+  
   
   describe('BigMallsService should be created', ()=>{
     
@@ -53,7 +53,7 @@ describe ('BigMallsService', () => {
 
   })
 
-  describe('Methods getters and setters should be created', ()=>{
+  describe('Getters should be created', ()=>{
 
     it('zoneSelected should return _zonesSelected',()=>{
       const zone = service['_zonesSelected']
@@ -65,6 +65,10 @@ describe ('BigMallsService', () => {
       const activities = service['_activitiesSelected']
       expect(service.activitiesSelected).toEqual(activities);
     });
+
+  })
+
+  describe('Setters should be created', ()=>{
 
     it('#setZonesSelected should change zoneSelected',()=>{
       const zoneModel:ZoneModel[] = [{idZone: 1, zoneName: 'zone'}]

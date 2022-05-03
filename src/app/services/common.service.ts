@@ -10,8 +10,7 @@ import {Observable} from "rxjs";
 
 export class CommonService {
 
-  constructor(private router:Router,
-              private http: HttpClient) {
+  constructor(private http: HttpClient) {
   }
 
   getZones(): Observable<any>{
