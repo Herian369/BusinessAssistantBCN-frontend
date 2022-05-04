@@ -16,10 +16,6 @@ import { RouterModule } from '@angular/router';
     VirtualAssistantPageComponent,
     VirtualAssistantAccordionComponent
   ],
-  exports: [
-    VirtualAssistantAccordionComponent
-
-  ],
   imports: [
     CommonModule,
     MatExpansionModule,
