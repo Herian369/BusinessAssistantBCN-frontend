@@ -69,6 +69,7 @@ export class LargeStablishmentsPageComponent implements OnInit, OnDestroy {
   }
 
   largeStablishmentZonesSelected(zoneSelected: ZoneModel, event: any) {
+    console.log(zoneSelected)
     if (event.checked) {
       this.largeStablishmentsService.addZonesSelected(zoneSelected);
     } else {
@@ -77,6 +78,8 @@ export class LargeStablishmentsPageComponent implements OnInit, OnDestroy {
   }
 
   largeStablishmentActivitySelected(activitySelected: EconomicActivityModel, event: any) {
+    console.log(activitySelected)
+
     if (event.checked) {
       this.largeStablishmentsService.addActivitiesSelected(activitySelected)
     } else {

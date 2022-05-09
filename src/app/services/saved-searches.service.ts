@@ -9,13 +9,5 @@ import { SavedSearchesModel } from "../models/saved-searches.model";
 
 export class SaveSearchesService {
 
-  constructor(private http: HttpClient) {
 
-  }
-
-  getSavedSearches() {
-    return this.http.get<SavedSearchesModel>(`${environment.BACKEND_BASE_URL}${environment.BACKEND_SAVED_SEARCHES_URL}`
-    )
-
-  }
 }

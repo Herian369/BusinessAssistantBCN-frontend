@@ -8,12 +8,13 @@ import { ZoneModel } from '../models/common/zone.model';
   providedIn: 'root'
 })
 export class BigMallsService {
-
-  constructor( private http: HttpClient ) { }
-
+  
   private _zonesSelected: ZoneModel[] = [];
   private _activitiesSelected: EconomicActivityModel[] = [];
 
+  constructor( private http: HttpClient ) { }
+
+  //GETTERS
   get zoneSelected() {
     return [...this._zonesSelected]
   }
@@ -22,6 +23,7 @@ export class BigMallsService {
     return [...this._activitiesSelected]
   }
 
+  //SETTERS
   setZonesSelected( zonesArr: ZoneModel[] ){
     this._zonesSelected = zonesArr;
   }
@@ -30,6 +32,7 @@ export class BigMallsService {
     this._activitiesSelected = activitiesArr
   }
 
+  //HTTPCLIENT
   getSelectedData() {
     let params = new HttpParams();
     const zonesId = this._zonesSelected.map( zone => zone.idZone );
@@ -40,7 +43,7 @@ export class BigMallsService {
 
     console.log(params)
     // Fake-filtered to check that it works. Will have to be replaced for real backend response.
-    return this.http.get(`${environment.BACKEND_BASE_URL}${environment.BACKEND_BIG_MALLS_FAKE_FILTERED_RESULTS}`, { params: params },
+    return this.http.get(`${environment.BACKEND_BASE_URL}${environment.BACKEND_BIG_MALLS_URL}`, { params: params },
     )
   }
 
